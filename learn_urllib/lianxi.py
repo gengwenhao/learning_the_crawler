@@ -1,19 +1,2 @@
-from urllib import request
-
-handler = request.ProxyHandler({
-    'http': 'localhost:1080'
-})
-
-# 网络请求对象
-opener = request.build_opener(handler)
-
-headers = {
-    'User-Agent': 'Mozilla/5.0',
-    'Referer': 'https://www.baidu.com/s?kw=lthack'
-}
-
-url = 'http://www.youtube.com'
-
-req = request.Request(url=url, headers=headers)
-resp = opener.open(req)
-print(resp.read())
+code = '45fd17c4c3ae6dc989d5f6560440bc404b168fb5285307aa7e3b18f4f39a7306'
+password = '13945657337xx'
